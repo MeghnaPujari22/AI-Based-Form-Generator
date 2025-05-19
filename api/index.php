@@ -105,7 +105,6 @@
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     body: new URLSearchParams(formData)
                 });
-
                 if (!response.ok) {
                     const error = await response.json();
                     throw new Error(error.error || 'Generation failed');
