@@ -100,7 +100,7 @@
 
             try {
                 toggleLoading(true);
-                const response = await fetch('api/generate.php', {
+                const response = await fetch('/api/generate.php', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                     body: new URLSearchParams(formData)
